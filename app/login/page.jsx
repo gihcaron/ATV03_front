@@ -1,16 +1,20 @@
+"use client";
+
+import { useState } from "react";
 
 import React from "react";
 import Button from "../../components/button";
-import styles from "../styles/globals.module.css";
+import styles from "../../styles/login.module.css";
 
 export default function Login() {
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.first_column}>
           <h2 className={styles.title_left}> Bem vindo de volta!</h2>
 
-          <p className={styles.subtitle}>Faça login para continuar</p>
+          <p className={styles.subtitle}></p>
           <p className={styles.subtitle}>Logue com suas informações pessoais</p>
           <Button text='Entrar' />
         </div>
@@ -25,12 +29,7 @@ export default function Login() {
             </ul>
           </div>
           <p className={styles.description}>Preencha os dados para cadastro</p>
-          <form action="" className="form">
-            <input type="text" placeholder="Nome" className={styles.input}/>
-            <input type="email" placeholder="Email"  className={styles.input} />
-            <input type="password" placeholder="Senha"  className={styles.input} />
-            <Button text='Cadastrar' className={styles.button} />
-          </form>
+          
         </div>
       </div>
     </div>
