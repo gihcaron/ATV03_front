@@ -113,10 +113,11 @@ export default function Home() {
             className={styles.button}
             onClick={handleCheck} />
             {""}
-            {match !== null && <p color=" rgb(#484930)">{error}</p>}
+            {match !== null && <p >{error}</p>}
             {""}
         </div>
       </div>
     </div>
+    
   );
 }

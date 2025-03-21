@@ -1,0 +1,31 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg,#7877BB, #d06de1);
+    color: white;
+    font-family:'Roboto', sans-serif;
+}
+
+.text{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 3rem;
+}
+
+.loader {
+    width: 8rem;
+    height: 8rem;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top: 6px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
