@@ -3,6 +3,7 @@
 import React from "react";
 import User from "../../components/User";
 import Biography from "../../components/biography";
+import KnowledgeGrid from "../../components/KnowledgeGrid";
 import styles from "../../styles/profile.module.css";
 
 export default function Profile() {
@@ -24,16 +25,9 @@ export default function Profile() {
         title={"Biografia"}
         text={"Meu nome é Giovanna Caron, tenho 16 anos e sou estudante do curso de Análise e Desenvolvimento de Sistemas no SENAI Valinhos. Atualmente, estou no 2º ano do ensino médio e no 1º módulo do curso técnico. Sou apaixonada por tecnologia e programação, e pretendo seguir carreira na área de desenvolvimento de software."}>
         </Biography>
-            <div className={styles.conhecimentos}>
-                <h2 className={styles.title_left}>Conhecimentos</h2>
-                <p className={styles.text}> HTML</p>
-                <p className={styles.text}> CSS</p>
-                <p className={styles.text}> JavaScript</p>
-                <p className={styles.text}> React</p>
-                <p className={styles.text}> Node.js</p>
-                <p className={styles.text}> MySQL</p>
-                <p className={styles.text}> Git</p>               
-            </div>
+         
+        <KnowledgeGrid/>
+        
         </div>
       </div>
     </div>
